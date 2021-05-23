@@ -1,0 +1,81 @@
+{% load static %}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  color: white;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #0000004d;
+}
+
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+label{
+  color: #fff;
+}
+.container {
+  margin: 60px;
+  float: right;
+  width: 52%;
+  border-radius: 5px;
+  background-color: #ffffff47;
+  padding: 20px;
+  display: none; /* Hidden by default */
+}
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+}
+.container1{
+  animation-name: openDrop;
+  animation-duration: 4s;
+}
+
+.close{
+  float:right;
+}
+
+.model{
+  width:100%;
+  padding-top: 100px;
+  height: 100%;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+@@keyframes openDrop {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+/* Created by Mudit Singhal, Pravin Jangir, Tarun Kumar */
