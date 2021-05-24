@@ -8,6 +8,7 @@
     <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
   </head>
   <body style = "background-image: url('{% static 'images/bg.gif' %}')">
+    <a href="{% static 'download/Template.zip' %}" download>Downlaod Files</a>
     <button onclick="openDrop();" type="button" name="button">Register yourself</button>
     <div class="container" id="modal">
       <form action="response" method="POST" enctype="multipart/form-data">
